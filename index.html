@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/shopping-1553-675844.png" type="image/x-icon">
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <!-- Google Font Cabin -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Begin Header -->
+        <header class="wrapper__header">
+            <div class="wrapper__header-top">
+                <ul class="wrapper__header-top-list">
+                    <li class="wrapper__header-top-item">
+                        <a href="" class="wrapper__header-top-link">Tin tức</a>
+                    </li>
+                    <li class="wrapper__header-top-item">
+                        <a href="" class="wrapper__header-top-link">Tuyển dụng</a>
+                    </li>
+                    <li class="wrapper__header-top-item">
+                        <a href="" class="wrapper__header-top-link">Trở thành nhà bán thuốc</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__header-center">
+                <a href="#" class="wrapper__header-center__link">
+                    <img src="./assets/images/logo.png" alt="Logo" class="wrapper__header-center__logo">
+                </a>
+                <div class="wrapper__header-center__input-search">
+                    <i class="wrapper__header-center__input-icon fas fa-search"></i>
+                    <input type="text" name="search" id="Search" placeholder="Tìm kiếm">
+                </div>
+                <ul class="wrapper__header-center__list">
+                    <li class="wrapper__header-center__item">
+                        <a href="" class="wrapper__header-center__link">Đăng nhập</a>
+                    </li>
+                    <li class="wrapper__header-center__item">
+                        <a href="" class="wrapper__header-center__link">Giỏ hàng</a>
+                    </li>
+                    <img src="./assets/images/icon-cart.png" alt="" class="wrapper__header-center__cart">
+                </ul>
+            </div>
+            <div class="wrapper__header-bottom">
+                <nav class="wrapper__header-navbar">
+                    <ul class="wrapper__header-navbar-list">
+                        <li class="wrapper__header-navbar-item">
+                            <a href="" class="wrapper__header-navbar-link">Sản phẩm</a>
+                        </li>
+                        <li class="wrapper__header-navbar-item">
+                            <a href="" class="wrapper__header-navbar-link">Hoạt chất</a>
+                        </li>
+                        <li class="wrapper__header-navbar-item">
+                            <a href="" class="wrapper__header-navbar-link">Khuyến mãi</a>
+                        </li>
+                        <li class="wrapper__header-navbar-item">
+                            <a href="" class="wrapper__header-navbar-link">Tin tức khuyến mãi</a>
+                        </li>
+                    </ul>
+                    <ul class="wrapper__header-navbar-list">
+                        <li class="wrapper__header-navbar-item">
+                            <a href="" class="wrapper__header-navbar-link">Hotline: 19006067 (miễn phí)</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Begin Slider -->
+        <section class="wrapper__slideshow">
+            <div class="wrapper__mySlides">
+                <img id="slider1" onclick="handleChangeImage()" src="./assets/images/banner1.jpg" alt="Slider 1" class="wrapper__mySlides-img">
+            </div>
+        </section>
+        <!-- <section class="wrapper__slideshow">
+            <div class="wrapper__mySlides fade">
+                <img id="slider1" onclick="handleChangeImage()" src="./assets/images/banner1.jpg" alt="Slider 1"
+                    class="wrapper__mySlides-img">
+                <div class="wrapper__mySlides-text">Slider 1</div>
+            </div>
+            <div class="wrapper__mySlides fade">
+                <img id="slider2" onclick="handleChangeImage()" src="./assets/images/banner8.jpg" alt="Slider 1"
+                    class="wrapper__mySlides-img">
+                <div class="wrapper__mySlides-text">Slider 2</div>
+            </div>
+            <div class="wrapper__mySlides fade">
+                <img id="slider2" onclick="handleChangeImage()" src="./assets/images/banner1.jpg" alt="Slider 1"
+                    class="wrapper__mySlides-img">
+                <div class="wrapper__mySlides-text">Slider 3</div>
+            </div>
+            <a class="wrapper__mySlides-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="wrapper__mySlides-next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+        <br>
+        <div style="text-align:center">
+            <span class="wrapper__mySlides-dot" onclick="currentSlide(1)"></span>
+            <span class="wrapper__mySlides-dot" onclick="currentSlide(2)"></span>
+            <span class="wrapper__mySlides-dot" onclick="currentSlide(3)"></span>
+        </div> -->
+        <!-- Begin Banner -->
+        <section class="wrapper__banner">
+            <ul class="wrapper__banner-list">
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner2.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner3.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner4.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner5.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner6.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+                <li class="wrapper__banner-item">
+                    <a href="#" class="wrapper__banner-link">
+                        <img src="./assets/images/banner7.png" alt="" class="wrapper__banner-img">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- Begin Content -->
+        <article class="wrapper__content">
+            <div class="wrapper__content-product">
+                <h2 class="wrapper__content-title">
+                    Sản phẩm bán chạy
+                </h2>
+                <div class="wrapper__content-product-list">
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-1.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Cơ Xương Khớp</h4>
+                            <p class="wrapper__content-product-name">Taniki 80mg Nic Pharma (H/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-2.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Da Liễu</h4>
+                            <p class="wrapper__content-product-name">Apruxton Almagat 1,5g/15ml Theragen (H/20gói)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-3.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dầu Xoa, Cao Xoa</h4>
+                            <p class="wrapper__content-product-name">Hemifere 100mg Schazoo (H/30v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-4.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Đông Y</h4>
+                            <p class="wrapper__content-product-name">Sulficin Sulpirid 50mg Capsules Nic Pharma (C/200v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-5.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dược Mỹ Phẩm</h4>
+                            <p class="wrapper__content-product-name">Denatri Alfacalcidol Capsules Phil Inter Pharma
+                                (H/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper__content-product">
+                <h2 class="wrapper__content-title">
+                    Sản phẩm mới
+                </h2>
+                <div class="wrapper__content-product-list">
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-6.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Cơ Xương Khớp</h4>
+                            <p class="wrapper__content-product-name">Cadirocin Roxithromycin 150mg Tablets Usp Pharma
+                                (C/200v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-7.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Da Liễu</h4>
+                            <p class="wrapper__content-product-name">Viên Uống Bồi Bổ Cơ Thể Top Health Ubb (C/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-8.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dầu Xoa, Cao Xoa</h4>
+                            <p class="wrapper__content-product-name">Coldtacin Capsules Nic Pharma (C/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-4.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Đông Y</h4>
+                            <p class="wrapper__content-product-name">Sulficin Sulpirid 50mg Capsules Nic Pharma (C/200v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-5.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dược Mỹ Phẩm</h4>
+                            <p class="wrapper__content-product-name">Denatri Alfacalcidol Capsules Phil Inter Pharma
+                                (H/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper__content-product">
+                <h2 class="wrapper__content-title">
+                    Chỉ có tại THUOCSI.VN
+                </h2>
+                <div class="wrapper__content-product-list">
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-1.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Cơ Xương Khớp</h4>
+                            <p class="wrapper__content-product-name">Taniki 80mg Nic Pharma (H/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-6.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Da Liễu</h4>
+                            <p class="wrapper__content-product-name">Cadirocin Roxithromycin 150mg.. Tablets Usp Pharma
+                                (C/200v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-7.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dầu Xoa, Cao Xoa</h4>
+                            <p class="wrapper__content-product-name">Viên Uống Bồi Bổ Cơ Thể Top Health Ubb (C/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-8.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Đông Y</h4>
+                            <p class="wrapper__content-product-name">Coldtacin Capsules Nic Pharma (C/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-5.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dược Mỹ Phẩm</h4>
+                            <p class="wrapper__content-product-name">Denatri Alfacalcidol Capsules Phil Inter Pharma
+                                (H/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper__content-product">
+                <h2 class="wrapper__content-title">
+                    Lựa chọn của bạn
+                </h2>
+                <div class="wrapper__content-product-list">
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-1.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Cơ Xương Khớp</h4>
+                            <p class="wrapper__content-product-name">Taniki 80mg Nic Pharma (H/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-2.png" alt="Product 2"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Da Liễu</h4>
+                            <p class="wrapper__content-product-name">Apruxton Almagat 1,5g/15ml Theragen (H/20gói)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-6.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dầu Xoa, Cao Xoa</h4>
+                            <p class="wrapper__content-product-name">Cadirocin Roxithromycin 150mg.. Tablets Usp Pharma
+                                (C/200v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-7.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Đông Y</h4>
+                            <p class="wrapper__content-product-name">Viên Uống Bồi Bổ Cơ Thể Top Health Ubb (C/60v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="wrapper__content-product-item">
+                        <div class="wrapper__content-product-box">
+                            <img src="./assets/images/product-item-8.png" alt="Product 1"
+                                class="wrapper__content-product-img">
+                        </div>
+                        <div class="wrapper__content-product-info">
+                            <h4 class="wrapper__content-product-types">Dược Mỹ Phẩm</h4>
+                            <p class="wrapper__content-product-name">Coldtacin Capsules Nic Pharma (C/100v)</p>
+                            <div class="wrapper__content-product-price">
+                                <p class="wrapper__content-product-price-old">
+                                    645,000 VND
+                                </p>
+                                <p class="wrapper__content-product-price-current">
+                                    516,000 VND
+                                    <span>/Hộp</span>
+                                </p>
+                            </div>
+                            <div class="wrapper__content-product-btn-group">
+                                <button class="wrapper__content-product--btn-add-to-cart">Thêm vào giỏ</button>
+                                <button class="wrapper__content-product--btn-buy">Mua ngay</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!-- Begin Service -->
+        <section class="wrapper__service">
+            <div class="wrapper__service-list">
+                <div class="wrapper__service-item">
+                    <img src="./assets/images/icon-freeship.png" alt="Freeship" class="wrapper__service-img">
+                    <a href="#" class="wrapper__service-link">
+                        MIỄN PHÍ VẬN CHUYỂN
+                    </a>
+                    <p class="wrapper__service-description">
+                        Miễn phí vận chuyển cho các đơn hàng trên 300,000VNĐ và nhận hàng nhanh chóng.
+                    </p>
+                </div>
+                <div class="wrapper__service-item">
+                    <img src="./assets/images/icon-heath.png" alt="Heath" class="wrapper__service-img">
+                    <a href="#" class="wrapper__service-link">
+                        TẬN TÂM PHỤC VỤ
+                    </a>
+                    <p class="wrapper__service-description">
+                        Dịch vụ chăm sóc khách hàng chuyên nghiệp luôn sẵn sàng giải đáp mọi thắc mắc của bạn. Hotline miễn
+                        phí: 1800 6821
+                    </p>
+                </div>
+                <div class="wrapper__service-item">
+                    <img src="./assets/images/icon-map.png" alt="Heath" class="wrapper__service-img">
+                    <a href="#" class="wrapper__service-link">
+                        CỬA HÀNG GẦN BẠN
+                    </a>
+                    <p class="wrapper__service-description">
+                        Pharmacity đang mở rộng hệ thống cửa hàng gần bạn để chăm sóc bạn tốt hơn. Hãy ghé thăm và trải
+                        nghiệm nhé!
+                    </p>
+                </div>
+                <div class="wrapper__service-item">
+                    <img src="./assets/images/icon-carts.png" alt="Heath" class="wrapper__service-img">
+                    <a href="#" class="wrapper__service-link">
+                        MUA HÀNG TRỰC TUYẾN
+                    </a>
+                    <p class="wrapper__service-description">
+                        Giá bán trên trang chỉ áp dụng khi mua sắm trên trang thương mại điện tử của Pharmacity.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Begin Banner -->
+        <section class="wrapper__slider wrapper__slider-2">
+        </section>
+        <!-- Begin News -->
+        <section class="wrapper__news">
+            <h2 class="wrapper__news-title">
+                Tin mới nhất
+            </h2>
+            <div class="wrapper__news-list">
+                <a href="#" class="wrapper__news-item">
+                    <img src="./assets/images/banner4.png" alt="News 1" class="wrapper__news-item-img">
+                    <div class="wrapper__news-item-info">
+                        <h4 class="wrapper__news-item-title">Sơ cứu kịp thời, không lo về giá – Sale đỉnh mùa Giáng sinh
+                        </h4>
+                        <p class="wrapper__news-item-description">
+                            Chăm sóc toàn diện cho vết thương Nhờ sự có mặt lâu đời ...
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="wrapper__news-item">
+                    <img src="./assets/images/banner3.png" alt="News 2" class="wrapper__news-item-img">
+                    <div class="wrapper__news-item-info">
+                        <h4 class="wrapper__news-item-title">Năm 2020 đầy biến động sắp khép lại, năm mới này hãy trao nhau
+                            những món quà cho...</h4>
+                        <p class="wrapper__news-item-description">
+                            Một năm mới lại đến, ai cũng mong muốn dành những điều tốt đẹp đến ...
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="wrapper__news-item">
+                    <img src="./assets/images/banner6.png" alt="News 3" class="wrapper__news-item-img">
+                    <div class="wrapper__news-item-info">
+                        <h4 class="wrapper__news-item-title">Mật ong, sữa ong chúa thì ai cũng biết, nhưng keo ong là gì và
+                            có công dụng như thế nào?</h4>
+                        <p class="wrapper__news-item-description">
+                            Loài ong đem đến nhiều sản phẩm quý giá cho sức khỏe con người, trong ...
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="wrapper__news-item">
+                    <img src="./assets/images/banner5.png" alt="News 4" class="wrapper__news-item-img">
+                    <div class="wrapper__news-item-info">
+                        <h4 class="wrapper__news-item-title">Tưng bừng năm mới, đổi quà liền tay</h4>
+                        <p class="wrapper__news-item-description">
+                            Than hoạt tính – Cứu tinh cho da đầu nhờn, ngứa và gàu Căng thẳng, ...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Begin Footer -->
+        <footer class="wrapper__footer">
+            <div class="wrapper__footer-list">
+                <div class="wrapper__footer-item">
+                    <h3 class="wrapper__footer-item-title">Về Thuocsi.vn</h3>
+                    <div class="wrapper__footer-item-info">
+                        <p class="wrapper__footer-item-description">
+                            Thuocsi.vn được thành lập từ năm 2018, là một trong những startup thành công trong lĩnh vực công
+                            nghệ về y tế
+                            <br><br>
+                            Hiện tại là cổng điện tử cung cấp thuốc cho hơn 1.000 nhà thuốc và phòng khám trên khắp Việt
+                            Nam.
+                            <br><br>
+                            Là một trong những nơi làm việc thu hút các tài năng trẻ với đam mê ứng dụng công nghệ 4.0 vào
+                            nền Y Tế
+                        </p>
+                        <a href="#" class="wrapper__footer-research-link">Tìm hiểu thêm</a>
+                    </div>
+
+                </div>
+                <div class="wrapper__footer-item">
+                    <h3 class="wrapper__footer-item-title">Liên kết hữu ích</h3>
+                    <div class="wrapper__footer-item-info">
+                        <ul class="wrapper__footer-item-list">
+                            <li class="wrapper__footer-item-item">
+                                <a href="#" class="wrapper__footer-item-link">Các câu hỏi thường gặp</a>
+                            </li>
+                            <li class="wrapper__footer-item-item">
+                                <a href="#" class="wrapper__footer-item-link">Tìm cửa hàng gần bạn</a>
+                            </li>
+                            <li class="wrapper__footer-item-item">
+                                <a href="#" class="wrapper__footer-item-link">Chính sách giao hàng</a>
+                            </li>
+                            <li class="wrapper__footer-item-item">
+                                <a href="#" class="wrapper__footer-item-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="wrapper__footer-item-item">
+                                <a href="#" class="wrapper__footer-item-link">Thông báo cổ đông</a>
+                            </li>
+                        </ul>
+                        <button class="wrapper__footer-item-btn">Trở thành nhà cung cấp</button>
+                    </div>
+                </div>
+                <div class="wrapper__footer-item">
+                    <h3 class="wrapper__footer-item-title">Đăng ký nhận tin mới</h3>
+                    <div class="wrapper__footer-item-info">
+                        <p class="wrapper__footer-item-sales">
+                            Hãy đăng ký email để nhận được khuyến mãi hoặc
+                            ưu đãi mới nhất từ Thuocsi.vn
+                        </p>
+                        <div class="wrapper__footer-input">
+                            <input type="text" name="email" id="Email" placeholder="Nhập email của bạn">
+                            <button class="wrapper__footer-item-btn wrapper__footer-item-btn-signUp">
+                                Đăng ký
+                            </button>
+                        </div>
+                        <div class="wrapper__footer-socials">
+                            <h3 class="wrapper__footer-item-title">Kết nối với chúng tôi</h3>
+                            <a href="#" class="wrapper__footer-social-link">
+                                <i class="wrapper__footer-social-icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="wrapper__footer-social-link">
+                                <i class="wrapper__footer-social-icon fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <ul class="wrapper__footer-contact-list">
+                            <h3 class="wrapper__footer-item-title">HOTLINE MIỄN PHÍ (7H-22H)</h3>
+                            <li class="wrapper__footer-contact-item">
+                                <a href="tel:18006821" class="wrapper__footer-contact-link">Gọi đặt hàng: 18006821</a>
+                            </li>
+                            <li class="wrapper__footer-contact-item">
+                                <a href="tel:18006821" class="wrapper__footer-contact-link">Gọi tư vấn - hỗ trợ:
+                                    18002001</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Code Javascript -->
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/25caa9cacd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
